@@ -23,7 +23,7 @@ try {
     $createServiceCommand = "sc create `"$serviceName`" binPath= `"$exePath`" start= auto"
     Invoke-Expression $createServiceCommand
     Write-Host "Service '$serviceName' created successfully with the executable at '$exePath'."
-    $addDescriptionCommand = "sc description $serviceName 'Autostarts the programm to remove the Voicemmeter waiting time'"
+    $addDescriptionCommand = "sc description $serviceName 'Autostarts the programm to remove the Voicemeeter waiting time'"
     Invoke-Expression $addDescriptionCommand
     Write-Host "Description successfully applied."
 } catch {
